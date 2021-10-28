@@ -54,18 +54,18 @@ DELETE FROM Artist WHERE Alias='Maroon 5';
 
 DELETE FROM Label WHERE LabelID=1;
 
-DELETE FROM Album WHERE AlbumName="Spotify Singles: Paul McCartney Box Set";
+DELETE FROM Album WHERE AlbumName='Spotify Singles: Paul McCartney Box Set';
 
-DELETE FROM TRACK WHERE SongName="Overdrive";
+DELETE FROM TRACK WHERE SongName='Overdrive';
 
 /*Update Queries*/
-UPDATE Artist SET Artist.Followers=Artist.Followers+100 WHERE Artist.ArtistID='4STHEaNw4mPZ2tzheohgXB';
+UPDATE Artist SET Followers=Followers+100 WHERE Artist.ArtistID='4STHEaNw4mPZ2tzheohgXB';
 
 /*Insertion*/
-INSERT INTO Artist VALUES ("100", 1, 1, 'test', '{rock}');
+INSERT INTO Artist VALUES ('100', 1, 1, 'test', '{rock}');
 
-INSERT INTO Label VALUES (1000, "Some Label");
+INSERT INTO Label VALUES (1000, 'Some Label');
 
-INSERT INTO Album VALUES ("abcdefg", "100", 1000, "Album Name", "01/01/2000", 10, 96, "album");
+INSERT INTO Album VALUES ('abcdefg', '100', 1000, 'Album Name', '01/01/2000', 10, 96, 'album');
 
-INSERT INTO Track VALUES ("trackid", "abcdefg", "Some Song", 0.5, 0.5, 0.5, 0.5, 100, 0.5, 0.5, 0.5);
+INSERT INTO Track VALUES ('trackid', 'abcdefg', 'Some Song', 0.5, 0.5, 0.5, 0.5, 100, 0.5, 0.5, 0.5);
