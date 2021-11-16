@@ -6,7 +6,8 @@ Group project for CSE 412
 * Psycopg2
 * PostgreSQL
 * System Requirements: WSL2, MacOS, Linux
-* Flask `pip install flask`
+* Flask `pip install flask flask-cors`
+* Visual Studio Code with Live Server Extention
 
 ## Steps to Run
 1. Configure insertData.py to connect to you local instance of the database
@@ -20,3 +21,4 @@ Group project for CSE 412
     * `psql -d spotify_data < tables.sql`
     * `python3 insertData.py`
     * `python3 app.py`
+3. Open the directory containing `index.html` in Visual Studio Code and run the webpage using Live Server
