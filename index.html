@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>CSE 412 Project</title>
+    <link rel='stylesheet' href='styles.css'>
+    <script src='https://d3js.org/d3.v5.min.js'></script>
+    <script src='main.js'></script>
+
+  </head>
+  <body>
+    <div class='wrapper'>
+      <h2>CSE 412 Project</h2>
+      <hr style='width:100%'>
+      &nbsp;Metric&nbsp;
+      <select id='metric-select' onchange="drawBar();">
+        <option value='danceability'>Danceability</option>
+        <option value='speechiness'>Speechiness</option>
+      </select>
+    </div>
+    <div class='wrapper'> 
+        &nbsp;Select&nbsp;
+      <select id='optional-select' onchange="drawBar();">
+        <option value='Team'>Team Average</option>
+      </select>
+    </div>
+    <div class='wrapper'>
+      <br>
+      <svg id='spotify-barchart'></svg>
+      <br>
+  </div>
+  </body>
+</html>
