@@ -6,6 +6,7 @@ Group project for CSE 412
 * Psycopg2
 * PostgreSQL
 * System Requirements: WSL2, MacOS, Linux
+* Flask `pip install flask`
 
 ## Steps to Run
 1. Configure insertData.py to connect to you local instance of the database
@@ -18,3 +19,4 @@ Group project for CSE 412
     * `createdb spotify_data`
     * `psql -d spotify_data < tables.sql`
     * `python3 insertData.py`
+    * `python3 app.py`
