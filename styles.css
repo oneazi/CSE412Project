@@ -11,6 +11,10 @@ svg {
   display: block;
 }
 
+.resizedTextbox {
+  width: 100px;
+}
+
 .wrapper {
   margin:auto;
   width:1440px;

@@ -18,6 +18,16 @@ document.addEventListener('DOMContentLoaded', function() {
     .style("opacity", 0);
 });
 
+// disable the input textbox if "artist" is the value chosen in the dropdown
+function checkOption() {
+    if (document.getElementById('metric-select').value === 'artist') {
+        document.getElementById('name-input').disabled = true;
+    }
+    else {
+        document.getElementById('name-input').disabled = false;
+    }
+}
+
 // draws the bar chart 
 function drawBar()
 {
@@ -25,5 +35,8 @@ function drawBar()
 
     fetch(`http://localhost:5000/spotifyData?metric=${currentMetric}`)
     .then(response => response.json())
-    .then(data => console.log(data));
+    .then(data => console.log(data))
+    .catch(() => {
+        console.log("Failed to contact to the server.")
+    });
 }

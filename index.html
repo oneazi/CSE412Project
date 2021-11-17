@@ -12,17 +12,18 @@
     <div class='wrapper'>
       <h2>CSE 412 Project</h2>
       <hr style='width:100%'>
-      &nbsp;Metric&nbsp;
-      <select id='metric-select' onchange="drawBar();">
-        <option value='danceability'>Danceability</option>
+      &nbsp;Metric&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <select id='metric-select' onchange="checkOption()">
+        <option value='artist'>Artist</option>
+        <option value='album'>Album</option>
+        <option selected value='danceability'>Danceability</option>
         <option value='speechiness'>Speechiness</option>
       </select>
     </div>
     <div class='wrapper'> 
-        &nbsp;Select&nbsp;
-      <select id='optional-select' onchange="drawBar();">
-        <option value='Team'>Team Average</option>
-      </select>
+      &nbsp;Artist Name&nbsp;
+      <input type="text" id='name-input' placeholder="Artist Name" size="100" class="resizedTextbox">
+      <button type="button" onclick="drawBar()">Search</button>
     </div>
     <div class='wrapper'>
       <br>
