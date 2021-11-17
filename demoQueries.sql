@@ -1,6 +1,14 @@
 /*Selection Queries*/
 SELECT * FROM Track WHERE ORDER BY Track.Acousticness DESC LIMIT 10;
 
+/*Query for the most danceable songs by a specific artist*/
+SELECT T.Alias, T.AlbumName, Label.LabelName, T.SongName, T.Danceability
+FROM Label, (SELECT * FROM Track, Album, Artist 
+                WHERE Track.AlbumID=Album.AlbumID AND Album.ArtistID=Artist.ArtistID AND Artist.Alias=''
+                ORDER BY Track.Danceability DESC LIMIT 10) as T
+WHERE T.LabelID = Label.LabelID
+ORDER BY T.Danceability DESC;
+
 /*Get the artist name, label name, song name, album name, and acousticness of the top 10 most acoustic songs*/
 SELECT Artist.Alias, Album.AlbumName, Label.LabelName, T.SongName, T.Acousticness
 FROM Artist, Album, Label, (SELECT * FROM Track ORDER BY Track.Acousticness DESC LIMIT 10) as T
@@ -31,7 +39,7 @@ FROM Artist, Album, Label, (SELECT * FROM Track ORDER BY Track.Duration DESC LIM
 WHERE T.AlbumID=Album.AlbumID AND Album.ArtistID=Artist.ArtistID AND Album.LabelID = Label.LabelID
 ORDER BY T.Duration DESC;
 
-/*Get the artist name, label name, song name, album name, and lodness of the top 10 loudest songs*/
+/*Get the artist name, label name, song name, album name, and loudness of the top 10 loudest songs*/
 SELECT Artist.Alias, Album.AlbumName, Label.LabelName, T.SongName, T.Loudness
 FROM Artist, Album, Label, (SELECT * FROM Track ORDER BY Track.Loudness DESC LIMIT 10) as T
 WHERE T.AlbumID=Album.AlbumID AND Album.ArtistID=Artist.ArtistID AND Album.LabelID = Label.LabelID
