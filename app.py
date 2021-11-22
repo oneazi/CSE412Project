@@ -70,7 +70,7 @@ def get_album_by_pop():
 @app.route("/album/artist")
 def get_album_by_artist():
     artist = request.args.get('artist')
-    query = "SELECT A.AlbumName, A.Popularity, Artist.Alias \
+    query = "SELECT Album.AlbumName, Album.Popularity, Artist.Alias \
         FROM Artist, Album \
         WHERE Album.ArtistID = Artist.ArtistID AND Artist.Alias=%s ORDER BY Popularity DESC;"
     cur.execute(sql.SQL(query), (artist,))
