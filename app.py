@@ -59,7 +59,7 @@ def get_artist_by_followers():
 # used for getting albums according to most popular
 @app.route("/album")
 def get_album_by_pop():
-    query = "SELECT A.*, Artist.Alias \
+    query = "SELECT A.AlbumName, A.Popularity, Artist.Alias \
         FROM Artist, (SELECT * FROM Album ORDER BY Popularity DESC LIMIT 10) as A \
         WHERE Artist.ArtistID=A.ArtistID ORDER BY Popularity DESC;"
     cur.execute(sql.SQL(query))
@@ -70,7 +70,7 @@ def get_album_by_pop():
 @app.route("/album/artist")
 def get_album_by_artist():
     artist = request.args.get('artist')
-    query = "SELECT Album.*, Artist.Alias \
+    query = "SELECT A.AlbumName, A.Popularity, Artist.Alias \
         FROM Artist, Album \
         WHERE Album.ArtistID = Artist.ArtistID AND Artist.Alias=%s ORDER BY Popularity DESC;"
     cur.execute(sql.SQL(query), (artist,))
