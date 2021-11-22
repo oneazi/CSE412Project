@@ -40,7 +40,44 @@ def get_tracks_by_artist():
     results = cur.fetchall()
     return jsonify({'results': results})
 
-# TODO: Add endpoints with queries for top artists ('/artist/poularity') (/artist/followers), top albums ('/album'),
+# TODO: Add endpoints with queries for top artists ('/artist/popularity') (/artist/followers), top albums ('/album'),
 #  and albums for a specified artist ('/album/artist')
+
+# used for gettings artists according to most popular
+@app.route("/artist/popularity")
+def get_artist_by_pop():
+    query = "SELECT Alias, Popularity FROM Artist ORDER BY Popularity DESC LIMIT 10;"
+    cur.execute(sql.SQL(query))
+    results = cur.fetchall()
+    return jsonify({'results': results})
+
+# used for gettings artists according to most followers
+@app.route("/artist/followers")
+def get_artist_by_followers():
+    query = "SELECT Alias, Followers FROM Artist ORDER BY Followers DESC LIMIT 10;"
+    cur.execute(sql.SQL(query))
+    results = cur.fetchall()
+    return jsonify({'results': results})
+
+# used for getting albums according to most popular
+@app.route("/album")
+def get_album_by_pop():
+    query = "SELECT A.*, Artist.Alias \
+        FROM Artist, (SELECT * FROM Album ORDER BY Popularity DESC LIMIT 10) as A \
+        WHERE Artist.ArtistID=A.ArtistID ORDER BY Popularity DESC;"
+    cur.execute(sql.SQL(query))
+    results = cur.fetchall()
+    return jsonify({'results': results})
+
+# used for getting albums according to most popular by a specific artist
+@app.route("/album/artist")
+def get_album_by_artist():
+    artist = request.args.get('artist')
+    query = "SELECT Album.*, Artist.Alias \
+        FROM Artist, Album \
+        WHERE Album.ArtistID = Artist.ArtistID AND Artist.Alias=%s ORDER BY Popularity DESC;"
+    cur.execute(sql.SQL(query), (artist,))
+    results = cur.fetchall()
+    return jsonify({'results': results})
 
 app.run(debug=True)

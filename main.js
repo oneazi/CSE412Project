@@ -41,15 +41,38 @@ function drawBar()
 
     if (currentMetric === 'artist') {
         // TODO: implement for top artists
+        fetch(`http://localhost:5000/artist/followers`)
+        .then(response => response.json())
+        .then(data => drawMetricBar(data, currentMetric, currentArtist))
+        .catch((error) => {
+            console.log(error)
+        });
+
+        fetch(`http://localhost:5000/artist/popularity`)
+        .then(response => response.json())
+        .then(data => drawMetricBar(data, currentMetric, currentArtist))
+        .catch((error) => {
+            console.log(error)
+        });
     }
     else if (currentMetric === 'album') {
         // TODO: implement for top albums and top albums by specific artist
         if (currentArtist === '')
         {
-            console.log("no artist")
+            fetch(`http://localhost:5000/album`)
+            .then(response => response.json())
+            .then(data => drawMetricBar(data, currentMetric, currentArtist))
+            .catch((error) => {
+                console.log(error)
+            });
         }
         else {
-            console.log('artist found')
+            fetch(`http://localhost:5000/album/artist?artist=${currentArtist}`)
+            .then(response => response.json())
+            .then(data => drawMetricBar(data, currentMetric, currentArtist))
+            .catch((error) => {
+                console.log(error)
+            });
         }
     }
     else {
