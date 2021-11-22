@@ -1,4 +1,3 @@
-# TODO: data has a lot of values with identical keys, remove if possible to simplify code
 import psycopg2
 import csv
 
