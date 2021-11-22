@@ -40,9 +40,6 @@ def get_tracks_by_artist():
     results = cur.fetchall()
     return jsonify({'results': results})
 
-# TODO: Add endpoints with queries for top artists ('/artist/popularity') (/artist/followers), top albums ('/album'),
-#  and albums for a specified artist ('/album/artist')
-
 # used for gettings artists according to most popular
 @app.route("/artist/popularity")
 def get_artist_by_pop():
@@ -80,4 +77,4 @@ def get_album_by_artist():
     results = cur.fetchall()
     return jsonify({'results': results})
 
-app.run(debug=True)
+app.run(debug=True, port=5000)
