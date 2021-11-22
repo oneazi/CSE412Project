@@ -22,3 +22,8 @@ Group project for CSE 412
     * `python3 insertData.py`
     * `python3 app.py`
 3. Open the directory containing `index.html` in Visual Studio Code and run the webpage using Live Server
+
+## Functionality
+1. Search using the provided metrics and provide an artist name for more specif results. Click search to load the results.
+2. Hover over bars to see more detailed information about the artists, songs, or albums
+3. Clicking on a bar will open a new tab which will search for the selected song, album, or artist on google
