@@ -51,7 +51,7 @@
 .bubble-4{
     position: absolute;
 
-    top: 1108px; left: 1300px; height: 250px; width: 250px;
+    top: 658px; left: 1850px; height: 700px; width: 750px;
 
     background-color: #1ed760;
     border-radius: 50%;
@@ -122,7 +122,7 @@
     .bubble-2{
         position: absolute;
     
-        top: 238px; left: -70px; height: 100px; width: 100px;
+        top: 238px; left: -550px; height: 600px; width: 600px;
     
         background-color: #1ed760;
         border-radius: 50%;
@@ -137,7 +137,7 @@
     .bubble-2{
         position: absolute;
     
-        top: -88px; left: -30px; height: 200px; width: 200px;
+        top: -88px; left: -30px; height: 0px; width: 0px;
     
         background-color: #1ed760;
         border-radius: 50%;
@@ -152,7 +152,7 @@
     .bubble-4{
         position: absolute;
     
-        top: 438px; left: 720px; height: 100px; width: 100px;
+        top: 438px; left: 720px; height: 600px; width: 600px;
     
         background-color: #1ed760;
         border-radius: 50%;
