@@ -10,7 +10,7 @@ var toolTip;
 document.addEventListener('DOMContentLoaded', function() {
     barSvg = d3.select('#spotify-barchart');
     barWidth = +barSvg.style('width').replace('px','');
-    barHeight = +barSvg.style('height').replace('px','');;
+    barHeight = +barSvg.style('height').replace('px','');
     barInnerWidth = barWidth - barMargin.left - barMargin.right;
     barInnerHeight = barHeight - barMargin.top - barMargin.bottom;
     toolTip = d3.select("body").append("div")
@@ -75,6 +75,7 @@ function drawBar()
             });
         }
     }
+    else if (currentMetric === 'select') {}
     else {
         if (currentArtist === '')
         {
