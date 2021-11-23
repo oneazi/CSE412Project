@@ -42,6 +42,23 @@
   border: 2px solid rgb(3, 3, 3);
 }
 
+@media only screen and (max-width: 700px){
+  .button-official{
+    float: none;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    width: 75px;
+    height: 75px;
+    z-index: 17;
+    background-color: aqua;
+    border-radius: 50%;
+    border: 2px solid rgb(148, 148, 148);
+  }
+}
+
+
 .input-official{
     position: absolute;
     right: 23.5vw;
