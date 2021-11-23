@@ -1,0 +1,164 @@
+
+.squigly-1{
+    position: absolute;
+    top: 600px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+
+    z-index: 102;
+}
+
+.bubble-1{
+    position: absolute;
+
+    top: 358px; left: -100px; height: 200px; width: 200px;
+
+    background-color: #1ed760;
+    border-radius: 50%;
+    z-index: 1;
+
+    display: inline-block;
+    overflow-x: hidden;
+}
+
+.bubble-2{
+    position: absolute;
+
+    top: 538px; left: 40px; height: 100px; width: 100px;
+
+    background-color: #1ed760;
+    border-radius: 50%;
+    z-index: 1;
+
+    display: inline-block;
+    overflow-x: hidden;
+}
+
+.bubble-3{
+    position: absolute;
+
+    top: 858px; left: 300px; height: 250px; width: 250px;
+
+    background-color: #1ed760;
+    border-radius: 50%;
+    z-index: 1;
+
+    display: inline-block;
+    overflow-x: hidden;
+}
+
+.bubble-4{
+    position: absolute;
+
+    top: 1108px; left: 1300px; height: 250px; width: 250px;
+
+    background-color: #1ed760;
+    border-radius: 50%;
+    z-index: 1;
+
+    display: inline-block;
+    overflow-x: hidden;
+}
+
+.bubble-5{
+    position: absolute;
+
+    top: -50px; left: 1400px; height: 200px; width: 200px;
+
+    background-color: #1ed760;
+    border-radius: 50%;
+    z-index: 1;
+
+    display: inline-block;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 1450px){
+    .bubble-5{
+        position: absolute;
+
+        top: 500px; left: 1250px; height: 600px; width: 600px;
+    
+        background-color: #1ed760;
+        border-radius: 50%;
+        z-index: 1;
+    
+        display: inline-block;
+        overflow-x: hidden;
+    }
+  }
+
+  @media only screen and (max-width: 1200px){
+    .bubble-5{
+        position: absolute;
+
+        top: -450px; left: 700px; height: 600px; width: 600px;
+    
+        background-color: #1ed760;
+        border-radius: 50%;
+        z-index: 1;
+    
+        display: inline-block;
+        overflow-x: hidden;
+    }
+  }
+
+  @media only screen and (max-width: 1200px){
+    .bubble-1{
+        position: absolute;
+
+        top: 658px; left: 100px; height: 0px; width: 0px;
+    
+        background-color: #1ed760;
+        border-radius: 50%;
+        z-index: 1;
+    
+        display: inline-block;
+        overflow-x: hidden;
+    }
+  }
+  @media only screen and (max-width: 1200px){
+    .bubble-2{
+        position: absolute;
+    
+        top: 238px; left: -70px; height: 100px; width: 100px;
+    
+        background-color: #1ed760;
+        border-radius: 50%;
+        z-index: 1;
+    
+        display: inline-block;
+        overflow-x: hidden;
+    }
+  }
+
+  @media only screen and (max-width: 800px){
+    .bubble-2{
+        position: absolute;
+    
+        top: -88px; left: -30px; height: 200px; width: 200px;
+    
+        background-color: #1ed760;
+        border-radius: 50%;
+        z-index: 1;
+    
+        display: inline-block;
+        overflow-x: hidden;
+    }
+  }
+
+  @media only screen and (max-width: 800px){
+    .bubble-4{
+        position: absolute;
+    
+        top: 438px; left: 720px; height: 100px; width: 100px;
+    
+        background-color: #1ed760;
+        border-radius: 50%;
+        z-index: 1;
+    
+        display: inline-block;
+        overflow-x: hidden;
+    }
+  }

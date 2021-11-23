@@ -1,0 +1,102 @@
+.opening-words-top{
+    margin: auto;
+    margin-top: 150px;
+    width: 625px;
+    height: 130px;
+  
+    border-left: 5px solid #1ed760;
+    z-index: 10;
+  }
+
+  @media only screen and (max-width: 960px){
+    .opening-words-top{
+      margin: auto;
+      margin-top: 75px;
+      width: 625px;
+      height: 130px;
+    
+      border-left: 5px solid #1ed760;
+      z-index: 10;
+    }
+  }
+
+  @media only screen and (max-width: 700px){
+    .opening-words-top{
+      margin: auto;
+      margin-top: 75px;
+      width: 80vw;
+      height: 130px;
+    
+      border-left: 5px solid #1ed760;
+      z-index: 10;
+    }
+  }
+
+
+
+  
+.opening-words-text-top{
+    position: relative;
+    width: 98%;
+    height: 100%;
+    float: right;
+  
+    text-align: left;
+  
+    font-family: 'Gotham-Book';
+    font-size: 20px;
+    color: white;
+    z-index: 10;
+  
+  }
+
+  .opening-words-bottom{
+    margin: auto;
+    margin-top: 50px;
+    width: 625px;
+    height: 110px;
+  
+    border-left: 5px solid #1ed760;
+    z-index: 10;
+  }
+
+  @media only screen and (max-width: 960px){
+    .opening-words-bottom{
+      margin: auto;
+      margin-top: 50px;
+      width: 625px;
+      height: 110px;
+    
+      border-left: 5px solid #1ed760;
+      z-index: 10;
+    }
+  }
+
+  @media only screen and (max-width: 700px){
+    .opening-words-bottom{
+      margin: auto;
+      margin-top: 50px;
+      width: 80vw;
+      height: 110px;
+    
+      border-left: 5px solid #1ed760;
+      z-index: 10;
+    }
+  }
+
+
+  
+.opening-words-text-bottom{
+    position: relative;
+    width: 98%;
+    height: 100%;
+    float: right;
+  
+    text-align: left;
+  
+    font-family: 'Gotham-Book';
+    font-size: 20px;
+    color: white;
+    z-index: 10;
+  
+  }

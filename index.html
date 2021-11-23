@@ -2,34 +2,82 @@
 <html>
   <head>
     <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSE 412 Project</title>
-    <link rel='stylesheet' href='styles.css'>
+    <link rel='stylesheet' href='./styles/styles.css'>
+    <link rel='stylesheet' href='./styles/art.css'>
+    <link rel='stylesheet' href='./styles/navbar.css'>
+    <link rel='stylesheet' href='./styles/buttons.css'>
+    <link rel='stylesheet' href='./styles/opening-words.css'>
     <script src='https://d3js.org/d3.v5.min.js'></script>
     <script src='main.js'></script>
 
   </head>
   <body>
-    <div class='wrapper'>
-      <h2>CSE 412 Project</h2>
-      <hr style='width:100%'>
-      &nbsp;Metric&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <select id='metric-select' onchange="checkOption()">
-        <option value='artistf'>Artist Followers</option>
-        <option value='artistp'>Artist Popularity</option>
-        <option value='album'>Album</option>
-        <option selected value='danceability'>Danceability</option>
-        <option value='speechiness'>Speechiness</option>
-      </select>
+    <div class="bubble-1"></div>
+    <div class="bubble-2"></div>
+    <div class="bubble-4"></div>
+    <div class="bubble-5"></div>
+
+    <div class="wrapper" id="wrapper">
+
+      <div class="dot"></div>
+
+      <div class="navbar">
+        <img src="./images/spotify_cse412.png" class="spotify-cse412-image">
+        <img src="./images/names.png" class="names-image">
+
+      </div>
+
+      <div class="opening-words-top">
+        <div class="opening-words-text-top">
+          <p style="font-family: Gotham-Bold;">160 artists. 1,969 albums. 33,912 songs. 390,414 data points.</p>
+          Using the Spotify API, we have collected fun
+          musical data to analyze. It contains information about artists, albums, songs, and more.
+        </div>
+      </div>
+
+      <div class="opening-words-bottom">
+        <div class="opening-words-text-bottom">
+          <!--<button onclick="createBubble()">Click Me!</button>-->
+          <p style="font-family: Gotham-Bold;">Create a query below.</p>
+          First, select what query type you want to perform. Then, optionally, choose an artist to filter by.
+        </div>
+      </div>
+
+      
+
+      <div class="selection-official">
+        <div class="selection-words">
+          Query
+        </div>
+        <select id='metric-select' class="selection-box" onchange="checkOption()">
+          <option select value='select'>-- Select --</option>
+          <option value='artistf'>Artist Followers</option>
+          <option value='artistp'>Artist Popularity</option>
+          <option value='artist'>Artist</option>
+          <option value='album'>Album</option>
+          <option value='danceability'>Danceability</option>
+          <option value='speechiness'>Speechiness</option>
+        </select>
+      </div>
+        
+      <div class="input-official">
+        <div class="input-words">
+          Artist
+        </div>
+        <input class="input-box" type="text" id='name-input' placeholder="Artist Name (Optional)">
+      </div>
+      <div class="button-official" onclick="drawBar()">
+        <img src="./images/start.png">
+      </div>
+      <div class="output-box">
+        <br>
+        <svg id='spotify-barchart'></svg>
+        <br>
+      </div>
+      
+        
     </div>
-    <div class='wrapper'> 
-      &nbsp;Artist Name&nbsp;
-      <input type="text" id='name-input' placeholder="Artist Name (Optional)" class="resizedTextbox">
-      <button type="button" onclick="drawBar()">Search</button>
-    </div>
-    <div class='wrapper'>
-      <br>
-      <svg id='spotify-barchart'></svg>
-      <br>
-  </div>
   </body>
 </html>

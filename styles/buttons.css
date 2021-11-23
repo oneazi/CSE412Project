@@ -1,0 +1,210 @@
+
+
+/*.button-official{
+  position: absolute;
+  right: 23vw;
+  top: 550px;
+
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  z-index: 170;
+
+  background-color: aqua;
+}*/
+
+.button-official{
+  float: none;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  width: 75px;
+  height: 75px;
+  z-index: 17;
+  background-color: aqua;
+  border-radius: 50%;
+  border: 2px solid rgb(148, 148, 148);
+}
+
+.button-official:hover{
+  float: none;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  width: 75px;
+  height: 75px;
+  z-index: 17;
+  background-color: aqua;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid rgb(3, 3, 3);
+}
+
+.input-official{
+    position: absolute;
+    right: 23.5vw;
+    top: 510px;
+  
+    width: 400px;
+    height: 90px;
+    z-index: 16;
+  }
+  
+  @media only screen and (max-width: 1560px){
+    .input-official{
+      position: absolute;
+      right: 15vw;
+      top: 510px;
+    
+      width: 30vw;
+      height: 90px;
+      z-index: 16;
+    }
+  }
+  
+  @media only screen and (max-width: 1200px){
+    .input-official{
+      position: absolute;
+      right: 10vw;
+      top: 510px;
+    
+      width: 30vw;
+      height: 90px;
+    }
+  }
+  
+  @media only screen and (max-width: 960px){
+    .input-official{
+      position: absolute;
+      right: 12vw;
+      top: 510px;
+    
+      width: 30vw;
+      height: 90px;
+    }
+  }
+
+  .input-box{
+    position: relative;
+  
+    width: 100%;
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 50px;
+    border: 2px solid grey;
+
+    font-size: 20px;
+    text-indent: 20px;
+  }
+  
+ 
+
+  .input-words{
+    margin-left: 20px;
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 40px;
+
+    font-family: 'Gotham-Bold';
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    text-align: left;
+  }
+  
+  
+.selection-official{
+    position: absolute;
+    left: 23.5vw;
+    top: 510px;
+  
+    width: 400px;
+    height: 90px;
+    z-index: 16;
+  }
+  
+  @media only screen and (max-width: 1560px){
+    .selection-official{
+      position: absolute;
+      left: 15vw;
+      top: 510px;
+    
+      width: 30vw;
+      height: 90px;
+    }
+  }
+  
+  @media only screen and (max-width: 1200px){
+    .selection-official{
+      position: absolute;
+      left: 10vw;
+      top: 510px;
+    
+      width: 30vw;
+      height: 90px;
+    }
+  }
+  
+  @media only screen and (max-width: 960px){
+    .selection-official{
+      position: absolute;
+      left: 12vw;
+      top: 510px;
+    
+      width: 30vw;
+      height: 90px;
+    }
+  }
+
+  .selection-box{
+    position: relative;
+  
+    width: 100%;
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 50px;
+    border: 2px solid grey;
+
+    font-size: 20px;
+    text-indent: 20px;
+  }
+  
+ 
+
+  .selection-words{
+    margin-left: 20px;
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 40px;
+
+    font-family: 'Gotham-Bold';
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    text-align: left;
+  }
+  
+
+  .dynamic-description{
+    margin-top: 200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    
+    height:60px;
+    width:1000px;
+  
+    background-color: rgb(18, 18, 18);
+  
+    font-family: 'Gotham-Book';
+    font-size: 50px;
+    text-align: center;
+    color: white;
+  
+  
+  }
+  
