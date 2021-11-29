@@ -104,6 +104,58 @@ html,body{
   margin:5px;
 }
 
+#spotify-barchart {
+  margin: auto;
+  display: block;
+}
+
+.resizedTextbox {
+  width: 150px;
+}
+
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: .5rem;
+  background: #FFFFFF;
+  color: #313639;
+  border: 1px solid #313639;
+  border-radius: 8px;
+  pointer-events: none;
+  font-size: 12pt;
+  z-index: 500;
+}
+
+.highlighted-rect{
+  stroke: black !important;
+  stroke-width: 4px;
+  fill-opacity: 0.7 !important;
+}
+
+rect {
+  fill: #1ED760;
+  stroke: #313639;
+  stroke-width: 1px;
+}
+.axis-label {
+  font-size:1.2em;
+  font-family:sans-serif;
+  fill:gray;
+}
+.title {
+  font-family:sans-serif;
+  font-size:1.6em;
+  fill:gray;
+}
+
+.tick line {
+  stroke: lightgray;
+}
+.tick text {
+  fill: gray;
+} 
+
 
 /*svg {
   border:1px solid gray;
