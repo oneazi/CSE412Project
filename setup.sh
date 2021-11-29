@@ -14,3 +14,4 @@ createdb spotify_data
 psql -d spotify_data < tables.sql
 python3 insertData.py
 python3 app.py
+pg_ctl -D $HOME/db412 -o '-k /tmp' stop
