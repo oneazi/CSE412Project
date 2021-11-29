@@ -7,7 +7,7 @@ Group project for CSE 412
 * PostgreSQL
 * System Requirements: WSL2, MacOS, Linux
 * Flask `pip install flask flask-cors`
-* Visual Studio Code with Live Server Extention
+* Visual Studio Code with Live Server Extension
 
 ## Steps to Run
 1. Configure insertData.py to connect to you local instance of the database
