@@ -2,6 +2,8 @@
 
 export PGPORT=8888
 export PGHOST=/tmp
+
+#Edit the path to your own PostGreSQL path if needed <path-to-sql>:${PATH}
 export PATH="/usr/lib/postgresql/12/bin:${PATH}"
 
 rm -rf $HOME/db412
