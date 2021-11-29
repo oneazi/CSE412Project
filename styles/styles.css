@@ -96,14 +96,6 @@ html,body{
   }
 }
 
-*svg {
-  border:1px solid gray;
-  border-radius:10px;
-  height:600px;
-  width:1000px;
-  margin:5px;
-}
-
 #spotify-barchart {
   margin: auto;
   display: block;
