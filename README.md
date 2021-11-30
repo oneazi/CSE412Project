@@ -61,3 +61,5 @@ With the `index.html` file open in the editor, use the `Go Live` button in the b
 
 3. Clicking on a bar will open a new tab which will search for the selected song, album, or artist on google
 <img src=images/search.png>
+
+4. Enjoy exlporing music based on all kinds of metrics and discover new songs by your favorite artists!
