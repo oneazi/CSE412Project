@@ -25,9 +25,12 @@ User guide for the CSE 412 project. Follow the steps below to set up, run, and i
 All the http requests made by the webpage will be logged in this terminal window.
 <img src=images/requests.png>
 
-5. Open the directory containing <mark>index.html</mark> in Visual Studio Code and run the webpage using Live Server by right clicking on the file and selecting `Open with Live Server`
+5. Open the directory containing `index.html` in Visual Studio Code and run the webpage using Live Server by right clicking on the file and selecting `Open with Live Server`
 <img src=images/open1.png>
-OR With the `index.html` file open in the editor, use the `Go Live` button in the bottom right corner to run the webpage using Live Server
+
+OR 
+
+With the `index.html` file open in the editor, use the `Go Live` button in the bottom right corner to run the webpage using Live Server
 <img src=images/open2.png>
 
 6. A window with a web browser should open automatically, but if it doesn't, open any web browser and go to http://127.0.0.1:5500/ to access the website.
