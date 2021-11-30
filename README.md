@@ -37,6 +37,27 @@ With the `index.html` file open in the editor, use the `Go Live` button in the b
 <img src=images/webpage.png>
 
 ## Functionality
-1. Search using the provided metrics and provide an artist name for more specif results. Click search to load the results.
+1. Search using the provided metrics and provide an artist name for more specific results. Click the play button to load the results.
+### Most Followed Artists
+<img src=images/mostFollowed.png>
+
+### Most Popular Artists
+<img src=images/mostPopular.png>
+
+### Top Albums
+<img src=images/topAlbums.png>
+
+### Top Albums by Artist
+<img src=images/topAlbumsArtist.png>
+
+### Top Tracks for a Metric
+<img src=images/topSongs.png>
+
+### Top Tracks for a Metric by Artist
+<img src=images/songMetricArtist.png>
+
 2. Hover over bars to see more detailed information about the artists, songs, or albums
+<img src=images/tooltip.png>
+
 3. Clicking on a bar will open a new tab which will search for the selected song, album, or artist on google
+<img src=images/search.png>
