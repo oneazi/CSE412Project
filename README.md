@@ -33,7 +33,7 @@ OR
 With the `index.html` file open in the editor, use the `Go Live` button in the bottom right corner to run the webpage using Live Server
 <img src=images/open2.png>
 
-6. A window with a web browser should open automatically, but if it doesn't, open any web browser and go to http://127.0.0.1:5500/ to access the website.
+6. A window with a web browser should open automatically. If it doesn't, open any web browser and go to http://127.0.0.1:5500/ or whichever port your Live Server is running on to access the website.
 <img src=images/webpage.png>
 
 ## Functionality
