@@ -61,7 +61,7 @@ def get_artist_by_followers():
 def get_album_by_pop():
     query = "SELECT A.AlbumName, A.Popularity, Artist.Alias \
         FROM Artist, (SELECT * FROM Album ORDER BY Popularity DESC LIMIT 10) as A \
-        WHERE Artist.ArtistID=A.ArtistID ORDER BY Popularity DESC;"
+        WHERE Artist.ArtistID=A.ArtistID ORDER BY Popularity DESC LIMIT 10;"
     cur.execute(sql.SQL(query))
     results = cur.fetchall()
     return jsonify({'results': results})
@@ -72,7 +72,7 @@ def get_album_by_artist():
     artist = request.args.get('artist')
     query = "SELECT Album.AlbumName, Album.Popularity, Artist.Alias \
         FROM Artist, Album \
-        WHERE Album.ArtistID = Artist.ArtistID AND Artist.Alias=%s ORDER BY Popularity DESC;"
+        WHERE Album.ArtistID = Artist.ArtistID AND Artist.Alias=%s ORDER BY Popularity DESC LIMIT 10;"
     cur.execute(sql.SQL(query), (artist,))
     results = cur.fetchall()
     return jsonify({'results': results})
